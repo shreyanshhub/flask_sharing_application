@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} Share and Download {% endblock %}
+
+{% block content %}
+
+  <a href="/download/{{file_id}}" >Download selected file</a>
+
+  <form action="#" method="post" >
+    <p>
+      Share with others
+    </p>
+    <p>
+      Recepient's mail :
+      <input type="email" name="email"  />
+    </p>
+    <p>
+      <input type="submit" name="share" />
+    </p>
+
+  </form>
+  <p>
+    <a href="/logout" >Logout</a>
+  </p>
+
+{% endblock %}
